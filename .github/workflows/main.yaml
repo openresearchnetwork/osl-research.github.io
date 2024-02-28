@@ -16,6 +16,10 @@ jobs:
     defaults:
       run:
         shell: bash -l {0}
+    permissions:
+      contents: read
+      pages: write
+
     steps:
     - uses: actions/checkout@v3
 
