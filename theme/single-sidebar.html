@@ -20,7 +20,7 @@
       {% for nav2 in (nav1.children or []) -%}
         {% if nav2.active %}
           {% for nav3 in (nav2.children or []) -%}
-            {% if nav3.title != "index" -%}
+            {% if nav3.title != "__index__" -%}
             {{ nav3_selected.append(nav3) or "" -}}
             {% endif %}
           {% endfor -%}

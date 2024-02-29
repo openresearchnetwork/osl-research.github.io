@@ -6,15 +6,24 @@
     <title>
       {% if page.title %}{{ page.meta["title"] }} - {% endif %}{{ config.site_name }}
     </title>
-    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65 crossorigin=anonymous>
-    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity=sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 crossorigin=anonymous></script>
-    <link rel=stylesheet href=https://use.fontawesome.com/aa402b3835.css>
-    <link rel=stylesheet href=/css/index.css>
-    <link rel=stylesheet href=/css/styles.css>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous">
+    </script>
+    <link rel=stylesheet
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel=stylesheet href="/css/index.css">
+    <link rel=stylesheet href="/css/styles.css">
     <title>Open Research Network</title>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv=x-ua-compatible content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script>
     <script>
       window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-213158050-1")
@@ -71,7 +80,7 @@
           </div>
           {% else %}
           {% for nav_child in nav_item.children %}
-            {% if nav_child.title == "index" %}
+            {% if nav_child.title == "__index__" %}
             <div class="nav_parent {% if nav_item.active %}nav_active{% endif %}">
               <a href="{{ nav_child.url|url }}" class="nav_item" title="{{ nav_item.title }}">
                 {{ nav_item.title }}
@@ -79,7 +88,7 @@
             </div>
             <div class="d-block d-sm-block d-md-none">
               {% for nav_child in nav_item.children %}
-              {% if nav_child.title != "index" %}
+              {% if nav_child.title != "__index__" %}
               {% if nav_item.active and nav_item == nav_child.parent %}
               {{ menu_2nd_level_selected.append(nav_child) or "" }}
               {% endif %}
@@ -147,7 +156,7 @@
       <nav class="nav d-none d-sm-none d-md-block">
         <div class='nav_body nav_extra extra'>
           <!-- SUB-MENU -->
-          {# Extract the url for a nested menu from the index child -#}
+          {# Extract the url for a nested menu from the __index__ child -#}
           {% for nav_child in menu_2nd_level_selected -%}
             {% if not nav_child.children -%}
             <div class="{% if nav_child.active %}nav_active{% endif %}" style="border-top:1px solid white;">
@@ -157,7 +166,7 @@
             </div>
             {% else %}
               {% for subsubmenu in nav_child.children -%}
-                {% if subsubmenu.title == "index" -%}
+                {% if subsubmenu.title == "__index__" -%}
                 <div class="{% if nav_child.active %}nav_active{% endif %}" style="border-top:1px solid white;">
                   <a href="{{ subsubmenu.url|url }}" class="nav_item" title="{{ nav_child.title }}">
                     {{ nav_child.title }}
@@ -178,18 +187,17 @@
         footer.citation *{margin-top:20px;font-size:10px!important;font-style:italic!important}
       </style>
       <div class=container>
-        <div class="row my-2 mt-5">
-          <div class="col alert alert-danger mt-5">
+        <div class="row mb-0 mt-5">
+          {% if menu_2nd_level_selected %}
+          <div class="mt-5"></div>
+          {% endif %}
+          <div class="col alert alert-danger mt-5 mb-0">
             The Open Research Network (ORN) is currently in its
             development phase, with an anticipated official launch in 2025. We
             invite you to stay connected for updates and announcements!
           </div>
         </div>
         <section class="wrap content">
-          {% if page.parent.children %}
-          <div class="d-none d-sm-none d-md-block" style="margin-top:80px"></div>
-          <div class="d-block d-sm-block d-md-none" style="margin-top:50px"></div>
-          {% endif %}
           {% block content %}
           {{ page.content }}
           {% endblock content %}

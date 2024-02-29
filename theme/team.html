@@ -10,8 +10,8 @@
 
 {% block content %}
 <section>
-  <div class="row pt-5">
-    <div class="col-md-9 mx-auto pt-3">
+  <div class="row">
+    <div class="col-md-9 mx-auto">
       {% block content_inner %}
       {{ page.content }}
       {% endblock content_inner %}
@@ -21,7 +21,7 @@
   {% for group in page.meta["teams"] %}
   <div class="row">
     <div class="col-md-9 mx-auto pt-3">
-      <h2>{{ group.name }}</h2>
+      <h2>{{ group.name.upper() }}</h2>
       <div class="row row-cols-1 row-cols-md-3">
         {% for member in group.members %}
         <div class="col">
@@ -29,28 +29,7 @@
             <img src="{{ member.image_url }}" class="card-img-top m-0" />
             <div class="card-body">
               <h3 class="card-title">{{ member.name }}</h3>
-
-              <a class="git_ico" href="{{ member.github_url }}">
-                <svg class="icon">
-                  <title>github</title>
-                  <use xlink:href="#github"></use>
-                </svg>
-              </a>
-
               <p class="card-text">{{ member.bio }}</p>
-
-              {% if "github_sponsor" in member %}
-              Support his work on community and open source projects via:
-
-              <iframe
-                src="{{ member.github_sponsor }}"
-                title="Sponsor {{ member.name }}"
-                height="35"
-                width="116"
-                style="border: 0"
-              ></iframe>
-
-              {% endif %}
             </div>
           </div>
         </div>
