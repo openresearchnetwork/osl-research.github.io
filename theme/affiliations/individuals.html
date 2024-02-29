@@ -1,0 +1,74 @@
+{% extends "main.html" %}
+
+{% block header_extra %}
+<style>
+  .main-nav > li > a {
+    color: #000000 !important;
+  }
+</style>
+
+{% endblock header_extra%}
+
+{% block content_inner %}
+<div class="row pt-0">
+  <div class="col mx-auto pt-0">
+    {{ page.content }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col mx-auto pt-3">
+
+    {% for member in page.meta["members"] %}
+
+    <div class="row">
+      <div class="col-4 text-center">
+        <a href="{{ member.url }}">
+          <img src="{{ member.thumbnail }}" />
+        </a>
+      </div>
+      <div class="col-8">
+        <h2>{{ member.name }}</h2>
+        <p class="py-0"><strong>Academic Title</strong>: {{ member.academic_title }}</p>
+        <p class="py-0"><strong>Professional Title</strong>: {{ member.professional_title }}</p>
+        <p class="py-0"><strong>ORCID</strong>: {{ member.orcid }}</p>
+        {% if member.work_areas %}
+        <p class="py-0"><strong>Work Areas:</strong>
+        {{ ", ".join(member.work_areas) }}
+        </p>
+        {% endif %}
+        {% if member.affiliations %}
+        <p class="py-0"><strong>Other Affiliations:</strong>
+        {{ ", ".join(member.affiliations) }}
+        </p>
+        {% endif %}
+        <p class="py-0"><strong>Contact</strong>: {{ member.contact }}</p>
+        <p>
+        {% if "github" in member.social_network  %}
+          <a href="{{ member.social_network.get("github") }}"><i
+              class="fa fa-brands fa-github-square position-static text-dark"></i></a>
+        {% endif %}
+        {% if "twitter" in member.social_network  %}
+          <a href="{{ member.social_network.get("twitter") }}"><i
+            class="fa fa-brands fa-twitter-square"></i>
+          </a>
+        {% endif %}
+        {% if "linkedin" in member.social_network  %}
+          <a href="{{ member.social_network.get("linkedin") }}"><i
+            class="fa fa-brands fa-linkedin"></i>
+          </a>
+        {% endif %}
+        {% if "researchgate" in member.social_network  %}
+          <a href="{{ member.social_network.get("researchgate") }}"><i
+            class="fa-solid fa-registered"></i>
+          </a>
+        {% endif %}
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    {% endfor %}
+  </div>
+</div>
+{% endblock content_inner %}

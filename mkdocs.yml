@@ -23,6 +23,17 @@ extra_javascript:
 
 nav:
   - Home: 'index.md'
+  - Affiliations:
+    - __index__: affiliations/index.md
+    - Organizations: affiliations/organizations/index.md
+    - Members: affiliations/members/index.md
+    - Partnership: affiliations/partnership/index.md
+  - Publications:
+    - __index__: publications/index.md
+  - About:
+    - __index__: about/index.md
+    - Team: about/team/index.md
+    - Formula: about/formula/index.md
   - Donate: 'donate/index.md'
 
 markdown_extensions:

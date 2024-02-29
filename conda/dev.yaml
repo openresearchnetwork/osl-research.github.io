@@ -1,4 +1,4 @@
-name: oslrc-web
+name: orn-web
 channels:
   - nodefaults
   - conda-forge
