@@ -1,4 +1,4 @@
-# Open Science Labs Research Center Code of Conduct
+# Open Research Network Code of Conduct
 
 ## Our Pledge
 
