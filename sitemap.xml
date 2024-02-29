@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://research.opensciencelabs.org/</loc>
-         <lastmod>2024-02-28</lastmod>
+         <loc>https://openresearchnet.org/</loc>
+         <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://research.opensciencelabs.org/search/</loc>
-         <lastmod>2024-02-28</lastmod>
+         <loc>https://openresearchnet.org/search/</loc>
+         <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://research.opensciencelabs.org/discord/</loc>
-         <lastmod>2024-02-28</lastmod>
+         <loc>https://openresearchnet.org/discord/</loc>
+         <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://research.opensciencelabs.org/donate/</loc>
-         <lastmod>2024-02-28</lastmod>
+         <loc>https://openresearchnet.org/donate/</loc>
+         <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
