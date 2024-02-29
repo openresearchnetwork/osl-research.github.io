@@ -1,8 +1,8 @@
 ---
 title: "Discord"
-description: "Open Science Labs, sharing knowledge"
+description: "Open Research Network, sharing knowledge"
 date: "2019-02-28"
-authors: ["OSL-RC Team"]
+authors: ["ORN Team"]
 template: single.html
 ---
 <script>

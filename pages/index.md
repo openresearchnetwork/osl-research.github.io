@@ -1,5 +1,5 @@
 ---
-title: Open Science Labs
+title: Open Research Network
 authors:
   - Ivan Ogasawara
   - Ever Vino

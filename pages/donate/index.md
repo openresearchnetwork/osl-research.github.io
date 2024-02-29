@@ -1,6 +1,6 @@
-## Support Open Science Labs: Donate Today
+## Support Open Research Network: Donate Today
 
-At Open Science Labs, we're dedicated to fostering innovation, collaboration,
+At Open Research Network, we're dedicated to fostering innovation, collaboration,
 and openness in science and technology. Your donation can make a significant
 impact, enabling us to support and expand our community-driven initiatives.
 Here's why your contribution matters:
@@ -28,14 +28,14 @@ science and technology, leading to advancements that benefit society as a whole.
 
 ### Impacting Society
 
-Open Science Labs is committed to using open science principles to tackle
+Open Research Network is committed to using open science principles to tackle
 real-world problems. Your donation supports projects with the potential to make
 significant societal impacts, from environmental conservation to public health
 advancements.
 
 ### How to Donate
 
-Open Science Labs accepts donations through GitHub Sponsors. To contribute,
+Open Research Network accepts donations through GitHub Sponsors. To contribute,
 please click the button below, which will direct you to our GitHub Sponsors
 page:
 
@@ -48,4 +48,4 @@ page:
 
 Every contribution, no matter the size, makes a difference. Together, we can
 continue to build an open, inclusive, and innovative future for science and
-technology. Thank you for considering a donation to Open Science Labs.
+technology. Thank you for considering a donation to Open Research Network.
