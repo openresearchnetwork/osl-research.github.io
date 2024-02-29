@@ -11,12 +11,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://openresearchnet.org/about/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/about/formula/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/about/team/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/affiliations/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/affiliations/members/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/affiliations/organizations/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/affiliations/partnership/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://openresearchnet.org/discord/</loc>
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://openresearchnet.org/donate/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openresearchnet.org/publications/</loc>
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
