@@ -8,8 +8,6 @@ template: main.html
 
 # Affiliations
 
-## Introduction to Affiliations
-
 Our affiliations are designed to foster a vibrant community of researchers,
 organizations, and partners dedicated to advancing the frontiers of knowledge.
 By affiliating with us, members join a network committed to the promotion of
