@@ -34,6 +34,7 @@ nav:
     - __index__: about/index.md
     - Team: about/team/index.md
     - Formula: about/formula/index.md
+    - Funding: about/funding/index.md
   - Donate: 'donate/index.md'
 
 markdown_extensions:
