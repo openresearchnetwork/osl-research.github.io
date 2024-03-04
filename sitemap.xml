@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://openresearchnet.org/about/funding/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://openresearchnet.org/about/team/</loc>
          <lastmod>2024-03-04</lastmod>
          <changefreq>daily</changefreq>
