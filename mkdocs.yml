@@ -30,6 +30,13 @@ nav:
     - Partnership: affiliations/partnership/index.md
   - Publications:
     - __index__: publications/index.md
+  - Framework:
+    - __index__: framework/index.md
+    - IGDORE: framework/igdore/index.md
+    - LiteRev: framework/literev/index.md
+    - Open Science Framework: framework/open-science-framework/index.md
+    - Open Science Labs: framework/open-science-labs/index.md
+    - PyOpenSci: framework/pyopensci/index.md
   - About:
     - __index__: about/index.md
     - Team: about/team/index.md
