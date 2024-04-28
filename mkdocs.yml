@@ -28,6 +28,7 @@ nav:
     - Organizations: affiliations/organizations/index.md
     - Members: affiliations/members/index.md
     - Partnership: affiliations/partnership/index.md
+    - Working Groups: affiliations/working-groups/index.md
   - Publications:
     - __index__: publications/index.md
   - About:
